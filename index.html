@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tapendra Nepali | Developer Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#020617;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:30px;
+padding:15px;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+text-shadow:0 0 10px #38bdf8;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+font-weight:800;
+background:linear-gradient(90deg,#38bdf8,#a78bfa,#f472b6);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{
+margin-top:10px;
+color:#94a3b8;
+font-size:18px;
+max-width:600px;
+}
+
+/* PROFILE IMAGE */
+.profile{
+margin-top:20px;
+width:150px;
+height:150px;
+border-radius:50%;
+border:3px solid #38bdf8;
+box-shadow:0 0 30px #38bdf8;
+}
+
+/* SECTIONS */
+section{
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+font-size:30px;
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(15px);
+transition:.4s;
+}
+
+.card:hover{
+transform:scale(1.05) rotateX(5deg) rotateY(5deg);
+box-shadow:0 0 40px rgba(56,189,248,0.5);
+}
+
+/* SKILLS */
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.skill{
+text-align:center;
+padding:20px;
+border-radius:15px;
+background:rgba(255,255,255,0.05);
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #38bdf8;
+}
+
+.skill i{
+font-size:40px;
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+/* LONG TEXT */
+.long-text{
+line-height:1.8;
+color:#cbd5f5;
+}
+
+/* CONTACT */
+.contact{
+text-align:center;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+color:#94a3b8;
+}
+
+/* SCROLL ANIMATION */
+.hidden{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* CURSOR GLOW */
+.cursor{
+position:fixed;
+width:20px;
+height:20px;
+border-radius:50%;
+background:#38bdf8;
+pointer-events:none;
+box-shadow:0 0 20px #38bdf8,0 0 40px #38bdf8;
+transform:translate(-50%,-50%);
+}
+</style>
+</head>
+
+<body>
+
+<div class="cursor"></div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+<h1>Tapendra Nepali</h1>
+
+<img src="https://i.imgur.com/your-image.png" class="profile">
+
+<p>
+Aspiring Developer from Nepal, passionate about building modern digital experiences.
+Focused on UI/UX design, Python programming, and continuously learning new technologies 
+to grow in the IT industry.
+</p>
+</div>
+
+<section id="about" class="hidden">
+<h2>About Me</h2>
+<div class="card long-text">
+<p>
+Hello! I am <strong>Tapendra Nepali</strong>, an enthusiastic learner and aspiring IT professional from Nepal.
+My journey in technology started with curiosity and has now turned into a strong passion for building
+creative and user-friendly digital solutions.
+<br><br>
+I am currently focusing on <strong>UI/UX Design</strong> to create visually appealing interfaces and 
+<strong>Python programming</strong> to understand logic, automation, and future AI development.
+<br><br>
+I believe in continuous learning and self-improvement. My goal is to become a skilled developer who can 
+design, develop, and deliver high-quality digital products that solve real-world problems.
+</p>
+</div>
+</section>
+
+<section id="skills" class="hidden">
+<h2>Skills</h2>
+<div class="skills">
+
+<div class="skill"><i class="fab fa-html5"></i><p>HTML</p></div>
+<div class="skill"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+<div class="skill"><i class="fab fa-python"></i><p>Python</p></div>
+<div class="skill"><i class="fab fa-figma"></i><p>Figma</p></div>
+<div class="skill"><i class="fab fa-github"></i><p>GitHub</p></div>
+
+</div>
+</section>
+
+<section id="experience" class="hidden">
+<h2>Experience</h2>
+<div class="card long-text">
+<p>
+I have worked for 2 years as a <strong>Trolley Boy</strong> and 2 years as a <strong>Stocker</strong> at Bhatbhateni Supermarket, Kathmandu.
+<br><br>
+These roles helped me develop discipline, teamwork, time management, and customer interaction skills,
+which are equally important in the professional IT world.
+</p>
+</div>
+</section>
+
+<section id="contact" class="hidden">
+<h2>Contact</h2>
+<div class="card contact">
+<p>Email: tapeshpariyar163@gmail.com</p>
+<p>GitHub: Add your GitHub link here</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Tapendra Nepali | Designed with ❤️</p>
+</footer>
+
+<script>
+// SCROLL
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+});
+document.querySelectorAll('.hidden').forEach(el=>observer.observe(el));
+
+// CURSOR EFFECT
+const cursor=document.querySelector('.cursor');
+document.addEventListener('mousemove',e=>{
+cursor.style.left=e.clientX+'px';
+cursor.style.top=e.clientY+'px';
+});
+</script>
+
+</body>
+</html>
